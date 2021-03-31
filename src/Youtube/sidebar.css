@@ -1,0 +1,132 @@
+.SideBar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.637);
+    overflow: hidden;
+    z-index: 2;
+}
+.Smain{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background:#212121;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    animation-name: SideBarAnime;
+    animation-duration: .1s;
+    animation-timing-function: ease-in;
+}
+.Smain .div1{
+    margin-top: 7%;
+    display: flex;
+    flex:row;
+    justify-content: space-between;
+    position: relative;
+    right:20%;
+}
+.Nbtn{
+    margin-right: 10%;
+}
+.Slogo{
+    margin-top: 2%;
+}
+.Srule{
+width: 100%;
+background-color: #373737;
+}
+.Out_Contain{
+width: 100%;
+overflow-y: scroll;
+}
+.Out_Contain::-webkit-scrollbar{
+    width: 8px;
+}
+.Out_Contain::-webkit-scrollbar-track{
+    background:#212121;
+}
+.Out_Contain::-webkit-scrollbar-thumb{
+  
+    background:#797878;
+ }
+ 
+
+.subr{
+    margin-right: 30%;
+    width: 95%;
+    background-color: #373737;
+}
+.Subimg{
+    height: 25px;
+width: 25px;
+border-radius: 50%;
+transform: translateY(50%);
+position: relative;
+left: 10%;
+}
+.SitemCon {
+    width: 100%;
+    margin-top: 1%;
+    text-align: left !important;
+}
+.SitemCon h2{
+    font-size: 16px;
+    color:#939393;
+    margin-left: 11%;
+}
+.Sitems{
+    cursor:pointer;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+}
+.Sitems:hover{
+    background: #424242;
+}
+.Sitems .Sicon{
+    transform: translateY(50%);
+    position: relative;
+color:#939393;
+height: 22px;
+width: 22px;
+left: 10%;
+}
+.Sitems h3{
+    padding-left: 20%;
+    position: relative;
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 5%;
+    /* right:60%; */
+}
+
+
+
+
+
+
+@keyframes SideBarAnime{
+0%{
+    right: 19%;
+}
+20%{
+    right: 17%;
+}
+40%{
+    right: 15%;
+}
+60%{
+    right: 12.5%;
+}
+80%{
+    right: 10%;
+}
+100%{
+    right: 5%;
+}
+}
